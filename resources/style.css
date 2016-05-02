@@ -1,0 +1,77 @@
+body {
+  font-family: 'Roboto';
+  background-color: white;
+  background-image: url("images/bg_rock.JPG");
+  background-size: 120%;
+}
+
+header {
+  width: 720px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+header h1{
+  letter-spacing: 5px;
+  font-size: 50px
+}
+
+.nav {
+  position: relative;
+}
+
+.nav ul {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.nav ul li {
+    font-size: 18px;
+    margin-right: 60px;
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+    letter-spacing: 2px;
+}
+
+.nav ul li last {
+  margin-right: 0px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: grey;
+}
+
+@media (max-width: 900px) {
+  header {
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  header h1{
+    letter-spacing: 5px;
+    font-size: 40px
+  }
+
+  .nav ul {
+      display: list-item;
+      list-style-type: none;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
+  .nav ul li {
+      font-size: 15px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      list-style-type: none;
+  }
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto);
