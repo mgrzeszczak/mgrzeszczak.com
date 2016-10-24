@@ -21,7 +21,7 @@ var app = (function(){
 
     function drawLoop(){
 
-        if (Date.now() - app.lastDate > 1000) {
+        /*if (Date.now() - app.lastDate > 1000) {
             app.fps = (Math.round(app.framesCount * 10000 / (Date.now() - app.lastDate)) / 10);
             console.log(app.fps);
             app.lastDate = Date.now();
@@ -29,7 +29,7 @@ var app = (function(){
         }
         else {
             app.framesCount++;
-        }
+        }*/
 
         ctx.clearRect(0,0,app.content.canvas.width,app.content.canvas.height);
         //ctx.pixelArray = ctx.getImageData(0,0,app.content.canvas.width,app.content.canvas.height);
